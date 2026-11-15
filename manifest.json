@@ -1,0 +1,12 @@
+
+{
+  "id": "/",
+  "name": "Shankar AI Study Assistant",
+  "short_name": "Shankar AI",
+  "description": "Your personal AI study assistant",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#f1f5f9",
+  "theme_color": "#14213d"
+}

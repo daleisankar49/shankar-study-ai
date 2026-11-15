@@ -1,0 +1,67 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#14213d">
+  <title>Shankar AI Study Assistant</title>
+  <link rel="manifest" href="manifest.json">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h2>🎓 Shankar AI</h2>
+    <p>Your Personal Study Assistant</p>
+  </header>
+
+  <main>
+    <h2>Welcome, Student!</h2>
+    <p>What would you like to study today?</p>
+
+    <div class="subjects">
+      <button onclick="ask('Explain Biology')">
+        🧬 Biology
+      </button>
+      <button onclick="ask('Explain English Grammar')">
+        📖 English
+      </button>
+      <button onclick="ask('Explain Odisha GK')">
+        🌍 Odisha GK
+      </button>
+      <button onclick="ask('Generate 10 MCQs for OSSC')">
+        📝 MCQ Practice
+      </button>
+    </div>
+
+    <div class="chat">
+      <div id="answer">
+        Your AI answers will appear here.
+      </div>
+
+      <input id="question"
+        placeholder="Ask your study question...">
+
+      <button onclick="sendQuestion()">Ask AI</button>
+    </div>
+  </main>
+
+  <script>
+    function ask(question) {
+      document.getElementById("question").value = question;
+      sendQuestion();
+    }
+
+    async function sendQuestion() {
+      const question =
+        document.getElementById("question").value.trim();
+
+      if (!question) return;
+
+      const answer = document.getElementById("answer");
+      answer.textContent = "Please connect the AI backend in Lesson 2.";
+    }
+  </script>
+</body>
+</html>
